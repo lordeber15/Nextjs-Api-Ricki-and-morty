@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "exclude": [
+      ".next"
+    ],
+    "checkJs": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2017"
+    ]
+  }
+}

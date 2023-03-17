@@ -1,0 +1,51 @@
+{
+  "name": "js-api-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate:make": "knex migrate:make --knexfile ./src/knexfile.mjs",
+    "migrate:latest": "knex migrate:latest --knexfile ./src/knexfile.mjs",
+    "migrate:up": "knex migrate:up --knexfile ./src/knexfile.mjs",
+    "migrate:down": "knex migrate:down  --knexfile ./src/knexfile.mjs",
+    "migrate:status": "knex migrate:status --knexfile ./src/knexfile.mjs",
+    "seed:create": "knex seed:make --knexfile ./src/knexfile.mjs",
+    "seed:run": "knex seed:run --knexfile ./src/knexfile.mjs"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "latest",
+    "@mui/system": "^5.0.6",
+    "@next/env": "latest",
+    "@stamp/arg-over-prop": "^1.0.4",
+    "change-case": "^4.1.2",
+    "clsx": "latest",
+    "knex": "^0.95.13",
+    "next": "latest",
+    "prop-types": "latest",
+    "ramda": "^0.27.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "sqlite3": "^5.0.2",
+    "stampit": "^4.3.2",
+    "swr": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.1.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0"
+  }
+}
